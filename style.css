@@ -1,11 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-@font-face {
-  font-family: "digital-clock-font";
-  src: url("put_the_location_to_your_font.ttf or .otf");
-}
-
 html {
   box-sizing: border-box;
 }
@@ -44,7 +39,7 @@ body {
   width: 400px;
   gap: 15px;
   padding: 10px;
-  border: 1px solid blue;
+  //border: 1px solid blue;
   background-color: #61565d;
   border-radius: 15px;
 }
@@ -68,6 +63,21 @@ body {
   background-color: #787878;
   font-family: "Orbitron" !important;
   padding: 0 10px 5px 0 !important;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  flex-grow: 1;
+  border-radius: 3px;
+  padding: 4px;
+  width: 100%;
+}
+.upper {
+  //border: 1px solid blue;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  height: 40%;
+  font-size: 0.5em !important;
 }
 .inner-container {
   display: flex;
@@ -111,6 +121,7 @@ body {
   width: 50px;
   border-radius: 3px;
   color: #e6f0e8;
+  cursor: pointer;
 }
 
 .grid-items:hover {
