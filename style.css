@@ -32,7 +32,6 @@ body {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  border: 1px solid blue;
 }
 
 .content {
