@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+  font-family: "digital-clock-font";
+  src: url("put_the_location_to_your_font.ttf or .otf");
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  //border: 1px solid blue;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  min-height: -webkit-fill-available;
+  font-size: 2.5em;
+  font-weight: 200;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  border: 1px solid blue;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  height: 600px;
+  width: 400px;
+  gap: 15px;
+  padding: 10px;
+  border: 1px solid blue;
+  background-color: #61565d;
+  border-radius: 15px;
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  width: 100%;
+  padding: 8px;
+  height: 25%;
+  border-radius: 6px;
+  color: #2a1e20;
+  background-color: #4d4146;
+  border: 0.5px solid rgb(38, 37, 37);
+}
+
+.inner {
+  border: 2px solid #2a1e20;
+  background-color: #787878;
+  font-family: "Orbitron" !important;
+  padding: 0 10px 5px 0 !important;
+}
+.inner-container {
+  display: flex;
+  align-items: stretch;
+  align-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  padding: 5px;
+  background-color: #4d4146;
+  border: 1px solid rgb(38, 37, 37);
+}
+
+.grid-rows {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-shrink: 1;
+  flex-grow: 1;
+  gap: 8px;
+  border-radius: 3px;
+  padding: 4px;
+  //height: 100%;
+  width: 100%;
+  //border: 1px solid blue;
+}
+
+.grid-items {
+  border: 2px solid #2a1e20;
+  background-color: #3d2e32;
+  -webkit-box-shadow: inset 4px 4px 2px #533f44, inset -4px -4px 2px #2b2426;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 50px;
+  border-radius: 3px;
+  color: #e6f0e8;
+}
+
+.grid-items:hover {
+  background-color: #372c2f;
+}
+
+.key {
+  background-color: #c5cfc7;
+  -webkit-box-shadow: inset 4px 4px 2px #e6f0e8, inset -4px -4px 2px #abaaa8;
+  color: #2a1e20;
+}
+
+.key:hover {
+  background-color: #c1c3c2;
+}
+
+.key2 {
+  background-color: #dc6c1c;
+  -webkit-box-shadow: inset 4px 4px 2px #db915c, inset -4px -4px 2px #b15b1d;
+}
+
+.key2:hover {
+  background-color: #d06519;
+}
